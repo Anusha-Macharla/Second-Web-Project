@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagavath Geetha Quotes</title>
+   
+    <style>
+	
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+		
+	* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.hero {
+    background: #fff; 
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.lamp-container {
+    position: absolute;
+    top: 50px;
+    left: 22%;
+    width: 300px;
+}
+
+.feather {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: -5px; 
+}
+
+.flute {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-left: 10px;
+    height: 140px;
+    margin-top: -30px;
+}
+
+
+.text-container {
+    max-width: 600px;
+    margin-top: 7%;
+    margin-left: 50%;
+    color: #000; 
+}
+
+.text-container h1 {
+    font-size: 80px;
+    font-weight: 400;
+    color: #000;
+}
+
+.text-container a {
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #00986f;
+    display: block;
+}	
+
+.wrapper {
+  width: 605px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px 30px 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+header,
+.content :where(i, p, span) {
+  color: #202842;
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .content {
+  margin: 35px 0;
+}
+.content .quote-area {
+  display: flex;
+  justify-content: center;
+}
+.quote-area i {
+  font-size: 15px;
+}
+.quote-area i:first-child {
+  margin: 3px 10px 0 0;
+}
+.quote-area i:last-child {
+  display: flex;
+  margin: 0 0 3px 10px;
+  align-items: flex-end;
+}
+.quote-area .quote {
+  font-size: 22px;
+  text-align: center;
+  word-break: break-all;
+}
+.content .author {
+  display: flex;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+  justify-content: flex-end;
+}
+.author span:first-child {
+  margin: -7px 5px 0 0;
+  font-family: monospace;
+}
+.wrapper .buttons {
+  border-top: 1px solid #ccc;
+}
+.buttons .features {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13px 22px;
+  border-radius: 30px;
+  background: #5372f0;
+}
+.buttons button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+medel-img{
+    width: 40%;
+}
+.man{width: 50%;
+    margin-left: 70px;
+}
+.buttons {
+    text-align: center;
+}
+
+#new-quote {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.more-link {
+    background-color: black;
+    color: white; 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    display: inline-block; 
+    border-radius: 5px; 
+}
+ 
+.footer{
+   text-align: center;
+}
+
+.footer .icons-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 2rem;
+}
+
+.footer .icons-container .icons{
+   text-align: center;
+   padding: 3rem 2rem;
+}
+
+.footer .icons-container .icons i{
+   height: 6rem;
+   width: 6rem;
+   border-radius: 50%;
+   background: var(--peru);
+   color: var(--white);
+   margin-bottom: 1rem;
+   line-height: 5.7rem;
+   font-size: 2rem;
+}
+
+.footer .icons-container .icons h3{
+   font-size: 2rem;
+   color: var(--black);
+   padding: 1rem 0;
+}
+
+.footer .icons-container .icons p{
+   line-height: 1.5rem;
+   font-size: 1.7rem;
+   color: var(--light-black);
+   text-transform: none;
+   margin-bottom: .5rem;
+}
+
+.footer .share{
+   margin: 2rem 0;
+}
+
+.footer .share a{
+   height: 6rem;
+   width: 6rem;
+   line-height: 5.8rem;
+   background: var(--black);
+   color: var(--white);
+   margin: 0 .3rem;
+   font-size: 2.5rem;
+}
+
+.footer .share a:hover{
+   background: var(--peru);
+}
+
+.footer .credit{
+   padding-top: 2rem;
+   margin-top: 3rem;
+   border-top: var(--border);
+   font-size: 2rem;
+   color: var(--light-black);
+}
+
+.footer .credit span{
+   color: var(--peru);
+}
+.credit {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    display: inline-block; 
+    border-radius: 5px; 
+    margin: 10px 0; 
+}
+
+.credit span {
+    font-weight: bold;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.image-container img {
+    margin-top:20px;
+}
+
+.image-caption {
+    margin-left: -100px;
+}
+
+
+
+    </style>
+</head>
+<body bgcolor="white">
+    
+	<section class="first-webpage">
+        <nav>
+        <img src="images\resize-1689868522116905796peacockfeatherpngdesigns0.png" class="menu-img">
+       <p style="font-size: 24px;">
+  <b>
+    <span id="changingColor" style="color: red;">Hare Krishna!</span>
+  </b>
+</p>
+
+<script>
+  function changeColor() {
+    const colors = ["red", "blue", "green", "purple", "orange"];
+    let currentColorIndex = 0;
+    
+    setInterval(() => {
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+      const changingColorElement = document.getElementById("changingColor");
+      changingColorElement.style.color = colors[currentColorIndex];
+    }, 1000);
+  }
+  
+  changeColor();
+</script>
+
+        <ul class="nav ul li">
+            <li>Home</li>
+            <li>About</li>
+            <li>Quotes</li>
+        </ul>
+    </nav>
+
+    <div class="lamp-container">
+        <img src="images\resize-1689868522116905796peacockfeatherpngdesigns0.png" class="feather">
+        <img src="images\download.png" class="flute">
+    </div>
+
+    <div class="text-container">
+    <h1>Bhagavad Gita</h1>
+    <p>The Song of God</p>
+    <p style="font-size: 23px;">
+        Bhagavad Gita is a divine song imparted by Lord Krishna to Arjuna, guiding him on the path to a righteous and fulfilling human life.
+        It provides profound insights into leading a virtuous life and fulfilling one's duties with unwavering devotion.
+    </p>
+</div>
+<a class="more-link" style="margin-left: 750px; margin-top: 20px; color: #fff; padding: 5px 10px; display: inline-block;">Know More</a>
+
+
+
+		
+		</section>
+		
+			<div class="image-container">
+    <img src="images\little_krishna_-cartoon.jpg" alt="Little Krishna Cartoon">
+   <p class="image-caption" style="font-size: 23px;">
+    "Each Universe is like a bubble. I am only the king for all those Universes"
+</p>
+
+</div>
+		
+		 <section class="second-webpage" style="margin-top: 85px; margin-left: 500px;">
+        <div class="wrapper">
+            <header id="changingColor">Quote of the Day</header>
+
+<script>
+  function changeColor() {
+    const headerElement = document.getElementById("changingColor");
+    const colors = ["red", "blue", "green", "purple", "orange"];
+    let currentColorIndex = 0;
+
+    setInterval(() => {
+      currentColorIndex = (currentColorIndex + 1) % colors.length;
+      headerElement.style.color = colors[currentColorIndex];
+    }, 1000);
+  }
+
+  changeColor();
+</script>
+            <div class="content">
+  <div class="quote-area" style="width: 300px; max-height: 100px;"> 
+    <i class="fas fa-quote-left"></i>
+    <p class="quote" id="quote-text"></p>
+    <i class="fas fa-quote-right"></i>
+  </div>
+ <div class="author" style="font-size: 26px; font-family: Arial;"> 
+    <span class="name" id="quote-author"></span>
+</div>
+
+</div>
+
+            <div class="buttons">
+                <div class="features">
+                    <button id="new-quote">New Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+	const quotes = [
+    {
+        text: "You are what you believe in. You become that which you believe you can become.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "Man is made by his belief. As he believes, so he is.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "If one offers Me with love and devotion a leaf, a flower, a fruit or water, I will accept it.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "Soul is never born and it never dies.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "Lust, Anger, and Greed are the three doors to hell.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "Detachment from material things is the way to inner peace.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "If you want to be Great, Think Great and Positive.",
+        author: "Bhagavad Gita"
+    },
+    {
+        text: "Love, tolerance and selflessness should be practiced.",
+        author: "Bhagavad Gita"
+    }
+];
+
+
+        const quoteText = document.getElementById("quote-text");
+        const quoteAuthor = document.getElementById("quote-author");
+        const newQuoteButton = document.getElementById("new-quote");
+
+        function getRandomQuote() {
+            return quotes[Math.floor(Math.random() * quotes.length)];
+        }
+
+        function displayQuote() {
+            const randomQuote = getRandomQuote();
+            quoteText.textContent = randomQuote.text;
+            quoteAuthor.textContent = randomQuote.author;
+        }
+
+        newQuoteButton.addEventListener("click", displayQuote);
+
+        displayQuote();
+    </script>
+	<div class="image-container">
+    <img src="images\26-1024x1024-PhotoRoom.png-PhotoRoom.png" alt="Little Krishna Cartoon" width="300" height="250">
+
+  <p class="image-caption" style="font-size: 0px; margin-left: -10px;">
+   <p><b><font color="red" size="5px">"Macharla </font><font color="blue" size="5px">Anusha</font></b><font size="5px"> holds a special place in my heart as one of the dearest devotees"</font></p>
+
+</p>
+
+
+</div>
+	
+	<section style="display: flex; justify-content: center; align-items: center; padding: 20px; margin-left: 20px; margin-right: 20px;">
+
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <div class="row" style="display: flex; justify-content: center; align-items: center;">
+            <div class="col-md-6" style="order: 1;">
+                <img class="man" src="D:\Java projects\Bhagavath-Gita-Random-Quotes-main\images\WhatsApp Image 2023-08-16 at 6.22.22 PM (1).jpeg" alt="" style="max-width: 100%;">
+            </div>
+            <div class="col-md-6" style="order: 2;">
+                <div class="card text-center" style="width: 100%; border: none; background-color: transparent;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 30px;">My Testimony</h5>
+
+<p class="card-text" style="font-size: 22px;">"Reading Bhagavad Gita transformed my career and way of living into a positive trajectory, surpassing my previous self and guiding me towards a better way of life."</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+91-8919427438</p>
+           
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+            <h3>email</h3>
+            <p>saianusha328@gmail.com</p>
+           
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+            <h3>Address</h3>
+            <p>Khammam, Telangana,India</p>
+      </div>
+
+   </div>
+ 
+<div class="credit" style="background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border: 1px solid #ccc; display: inline-block; border-radius: 5px; margin: 10px 0;">Created by  <span style="font-weight: bold;">Macharla Anusha</span> | Copyright 2023 all rights reserved.</div>
+
+
+
+</section>
+
+
+</body>
+</body>
+</html>
+
+
+
+
+
